@@ -1,9 +1,11 @@
 import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import AOS from "aos";
+import { useEffect } from "react";
 
 const Home: NextPage = () => {
+    useEffect(() => {
+        AOS.init();
+    }, []);
     return (
         <>
             <section>
@@ -162,14 +164,14 @@ const Home: NextPage = () => {
                                     data-aos="zoom-in"
                                 >
                                     <img
-                                        src="./assets/img/Header-1.png"
+                                        src="/img/Header-1.png"
                                         className="img-fluid"
                                         alt=""
                                     />
                                     <div className="card left-card position-absolute border-0">
                                         <div className="d-flex align-items-center mb-16 gap-3">
                                             <img
-                                                src="./assets/img/Header-2.png"
+                                                src="/img/Header-2.png"
                                                 width="40"
                                                 height="40"
                                                 className="rounded-pill"
@@ -250,7 +252,7 @@ const Home: NextPage = () => {
                                     <div className="card right-card position-absolute border-0">
                                         <div className="position-relative d-flex flex-row justify-content-center mb-24">
                                             <img
-                                                src="./assets/img/Header-3.png"
+                                                src="/img/Header-3.png"
                                                 className="rounded-pill"
                                                 alt=""
                                             />
@@ -574,7 +576,7 @@ const Home: NextPage = () => {
                             <a href="./src/detail.html">
                                 <div className="blur-sharp">
                                     <img
-                                        src="./assets/img/Thumbnail-1.png"
+                                        src="/img/Thumbnail-1.png"
                                         width="205"
                                         height="270"
                                         alt=""
@@ -612,7 +614,7 @@ const Home: NextPage = () => {
                             <a href="./src/detail.html">
                                 <div className="blur-sharp">
                                     <img
-                                        src="./assets/img/Thumbnail-2.png"
+                                        src="/img/Thumbnail-2.png"
                                         width="205"
                                         height="270"
                                         alt=""
@@ -650,7 +652,7 @@ const Home: NextPage = () => {
                             <a href="./src/detail.html">
                                 <div className="blur-sharp">
                                     <img
-                                        src="./assets/img/Thumbnail-3.png"
+                                        src="/img/Thumbnail-3.png"
                                         width="205"
                                         height="270"
                                         alt=""
@@ -688,7 +690,7 @@ const Home: NextPage = () => {
                             <a href="./src/detail.html">
                                 <div className="blur-sharp">
                                     <img
-                                        src="./assets/img/Thumbnail-4.png"
+                                        src="/img/Thumbnail-4.png"
                                         width="205"
                                         height="270"
                                         alt=""
@@ -726,7 +728,7 @@ const Home: NextPage = () => {
                             <a href="./src/detail.html">
                                 <div className="blur-sharp">
                                     <img
-                                        src="./assets/img/Thumbnail-5.png"
+                                        src="/img/Thumbnail-5.png"
                                         width="205"
                                         height="270"
                                         alt=""
@@ -817,7 +819,7 @@ const Home: NextPage = () => {
                             data-aos="zoom-in"
                         >
                             <img
-                                src="./assets/img/Header-9.png"
+                                src="/img/Header-9.png"
                                 width="612"
                                 height="452"
                                 className="img-fluid"
